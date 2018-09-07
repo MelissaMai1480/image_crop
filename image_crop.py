@@ -11,7 +11,7 @@ from PIL import Image
 import xml.dom.minidom
 import numpy as np
  
-ImgPath = 'C:/Users/mai.mm.2/Desktop/train/' 
+ImgPath = 'C:/Users/mai.mm.2/Desktop/may/' 
 xmlPath = 'C:/Users/mai.mm.2/Desktop/xml/'
 ProcessedPath = 'C:/Users/mai.mm.2/Desktop/1/'
  
