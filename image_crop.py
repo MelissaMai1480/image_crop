@@ -11,8 +11,8 @@ from PIL import Image
 import xml.dom.minidom
 import numpy as np
  
-ImgPath = 'C:/Users/mai.mm.2/Desktop/may/' 
-xmlPath = 'C:/Users/mai.mm.2/Desktop/xml/'
+ImgPath = 'C:/Users/mai.mm.2/Desktop/train1/' 
+xmlPath = 'C:/Users/mai.mm.2/Desktop/new_xml/'
 ProcessedPath = 'C:/Users/mai.mm.2/Desktop/1/'
  
 imagelist = os.listdir(ImgPath)
@@ -20,7 +20,7 @@ for image in imagelist:
 	image_pre, ext = os.path.splitext(image)
 	imgfile = ImgPath + image 
 	xmlfile = xmlPath + image_pre + '.xml'
-	storename,img = image_pre.split('_')
+	#storename,img = image_pre.split('_')
 	DomTree = xml.dom.minidom.parse(xmlfile)
 	annotation = DomTree.documentElement
  
